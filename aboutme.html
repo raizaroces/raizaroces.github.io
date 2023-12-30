@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Project 101</title>
+    <link rel="icon" href="images/favicon.ico">
+    <style>
+        /* Global styles for all elements */
+        * {
+            font-family: Arial, Helvetica, sans-serif; /*If the browser does not support the first font, it tries the next font.*/
+            box-sizing: border-box;
+        }
+
+        /* Styling for the header section */
+        header {
+            background-color: black;
+            width: 100%;
+            padding: 15px;
+        }
+
+        /* Body styles */
+        body {
+            background-image: url("images/bg2.jpg");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Styles for the top navigation */
+        .topnav {
+            list-style: none;
+            text-align: center;
+        }
+
+        /* Styles for the navigation list */
+        .topnav ul {
+            list-style-type: none;
+        }
+
+        /* Styles for navigation links */
+        .topnav li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .topnav li a {
+            display: inline-block;
+            width: 400px;
+            margin: 0;
+            padding: 5px;
+            font-size: 25px;
+            text-decoration: none;
+            line-height: 2;
+            border: 5px dotted white;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Styles for navigation links on hover and when active */
+        .topnav li a:hover,
+        .topnav li a.active {
+            background-color: white;
+            color: black;
+        }
+
+        /* Horizontal lines styles */
+        hr.line1 {
+            border: 5px solid black;
+        }
+
+        hr.line2 {
+            border: 5px dotted black;
+        }
+
+        /* Button styles */
+        .button {
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px black;
+            color: white;
+            border: none;
+            box-shadow: 0 10px black;
+            border-radius: 70px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        /* Button hover effect */
+        .button:hover {
+            background-color: red;
+        }
+
+        /* Button active effect */
+        .button:active {
+            background-color: blue;
+            box-shadow: 0 10px red;
+            transform: translateY(20px);
+        }
+
+        /* Styles for individual buttons */
+        .b1 {
+            background-color: blue;
+            border: 3px solid black;
+            width: 95%;
+            margin: 30px;
+        }
+
+        .b2 {
+            background-color: #f55f00;
+            width: 40%;
+            height: 80px;
+        }
+
+        .b3 {
+            background-color: green;
+            width: 50%;
+        }
+
+        .b4 {
+            background-color: #400080;
+            width: 50%;
+        }
+
+        .b5 {
+            background-color: brown;
+            width: 40%;
+            height: 100px;
+        }
+
+        .b6 {
+            background-color: black;
+            width: 50%;
+        }
+
+        /* Animation styles for buttons in the 'kulurs' class */
+        .kulurs button {
+            position: relative;
+            animation-name: animate;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+
+        /* Keyframes(controls) for button animation */
+        @keyframes animate {
+            0% {
+                background-color: black;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: blue;
+                left: 300px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: #ff0066;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: #9900cc;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+         <!-- Top Navigation Section -->
+            <div class="topnav">
+                <ul>
+                    <!-- Home Link -->
+                    <li><a href="index.html">Home</a></li>
+                    <!-- About Me Link -->
+                    <li><a class="active" href="aboutme.html">About Me </a></li>
+                </ul>
+            </div>
+        </header>
+    <!-- Horizontal lines -->
+    <hr class="line1">
+    <hr class="line2">
+    <!-- Form with buttons -->
+    <form>
+        <button class="button b1" formaction="name_and_age.html">Name and Age </button>
+        <button class="button b2" formaction="family_background.html">Family Background </button>
+        <button class="button b3" formaction="hobbies.html"> Hobbies </button>
+        <button class="button b4" formaction="skills_talents.html"> Skills/Talents </button>
+        <button class="button b5" formaction="strength_and_weaknesses.html"> Strength and Weaknesses </button>
+        <div class="kulurs">
+            <button class="button b6" formaction="career.html"> Career or Job position </button>
+        </div>
+    </form>
+</body>
+
+</html>

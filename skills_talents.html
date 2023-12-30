@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Project 101</title>
+    <link rel="icon" href="images/favicon.ico">
+    <style>
+        /* Global styles for all elements */
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            /* If the browser does not support the first font, it tries the next font. */
+            box-sizing: border-box;
+        }
+
+        /* Styling for the header section */
+        header {
+            background-color: black;
+            width: 100%;
+            padding: 15px;
+        }
+
+        /* Body styles */
+        body {
+            background-color: #ffe6b9;
+            margin: 0;
+        }
+
+        /* Styles for the top navigation */
+        .topnav {
+            list-style: none;
+            text-align: center;
+        }
+
+        /* Styles for the navigation list */
+        .topnav ul {
+            list-style-type: none;
+        }
+
+        /* Styles for navigation links */
+        .topnav li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .topnav li a {
+            display: inline-block;
+            width: 400px;
+            margin: 0;
+            padding: 5px;
+            font-size: 25px;
+            text-decoration: none;
+            line-height: 2;
+            border: 5px dotted white;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Styles for navigation links on hover and when active */
+        .topnav li a:hover,
+        .topnav li a.active {
+            background-color: white;
+            color: black;
+        }
+
+        /* Horizontal lines styles */
+        hr.line1 {
+            border: 5px solid black;
+        }
+
+        hr.line2 {
+            border: 5px dotted black;
+        }
+
+        /* Heading styles */
+        h2 {
+            font-weight: bold;
+            color: white;
+            font-size: 40px;
+            width: 50%;
+            margin: 0;
+            text-shadow: 3px 3px black;
+            -webkit-text-stroke: 1px white;
+        }
+
+        /* Heading animation styles (changing colors) in the 'kulurs' class */
+        .kulurs h2 {
+            height: 50px;
+            position: relative;
+            animation-name: palit;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        /* Keyframes (controls) for animation */
+        @keyframes palit {
+            0% { background-color: black; }
+            25% { background-color: brown; }
+            50% { background-color: #5200cc; }
+            75% { background-color: green; }
+            100% { background-color: #990000; }
+        }
+
+        .box {
+            height: 500px;
+            background-color: #400080;
+            padding: 0px;
+            margin: 20px;
+            border: 5px dotted white;
+            position: relative;
+        }
+
+        /* Images and gif styling */
+        #tm {
+            transform: translate(50px, 10px);
+        }
+
+        #time {
+            transform: translate(10px, -150px);
+        }
+
+        #tm2 {
+            transform: translate(1020px, -260px);
+            position: relative;
+            animation-name: animate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animate {
+            0% { left: 0px; right: 0px; }
+            50% { left: 100px; right: 100px; }
+            100% { left: 0px; right: 0px; }
+        }
+
+        #create {
+            transform: translate(50px, -250px);
+        }
+
+        #creativity {
+            transform: translate(10px, -350px);
+        }
+
+        #create2 {
+            transform: translate(1030px, -500px);
+            position: relative;
+            animation-name: animate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        /* Back button */
+        .button {
+            background-color: #a5ff28;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            width: 20%;
+            border: none;
+            box-shadow: 0 10px black;
+            border-radius: 70px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transform: translate(30%, -250%);
+        }
+
+        .button:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Top Navigation Section -->
+        <div class="topnav">
+            <ul>
+                <!-- Home Link -->
+                <li><a href="index.html">Home</a></li>
+                <!-- About Me Link -->
+                <li><a class="active" href="aboutme.html">About Me</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Horizontal lines -->
+    <hr class="line1">
+    <hr class="line2">
+    <!-- Heading with changing colors animation -->
+    <div class="kulurs">
+        <center><h2>Skills/Talents</h2></center>
+    </div>
+
+    <div class="box">
+        <div id="tm">
+            <img src="images/timemanagement.gif" alt="play" style="width:300px;height:180px;">
+        </div>
+
+        <div id="time">
+            <center><img src="images/time_management.png" alt="playing" style="width:600px;height:100px;"><center>
+        </div>
+
+        <div id="tm2">
+            <img src="images/clock.png" alt="eco" style="width:200px;height:180px;">
+        </div>
+
+        <div id="create">
+            <img src="images/creativity.gif" alt="play" style="width:300px;height:180px;">
+        </div>
+
+        <div id="creativity">
+            <center><img src="images/creativity.png" alt="playing" style="width:500px;height:100px;"><center>
+        </div>
+
+        <div id="create2">
+            <img src="images/create.gif" alt="eco" style="width:200px;height:180px;">
+        </div>
+    </div>
+    <br>
+    <form>
+        <button class="button" formaction="aboutme.html">BACK</button>
+    </form>
+</body>
+</html>

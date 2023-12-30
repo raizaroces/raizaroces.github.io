@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Final Project 101 </title>
+    <link rel="icon" href="images/favicon.ico">
+    <style>
+        /* Global styles for all elements */
+        * {
+            font-family: Arial, Helvetica, sans-serif; /*If the browser does not support the first font, it tries the next font.*/
+            box-sizing: border-box;
+        }
+
+        /* Styling for the header section */
+        header {
+            background-color: black;
+            width: 100%;
+            padding: 15px;
+        }
+
+        /* Body styles */
+        body {
+            background-color: #ff90ee;
+            margin: 0;
+        }
+
+        /* Styles for the top navigation */
+        .topnav {
+            list-style: none;
+            text-align: center;
+        }
+
+        /* Styles for the navigation list */
+        .topnav ul {
+            list-style-type: none;
+        }
+
+        /* Styles for navigation links */
+        .topnav li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .topnav li a {
+            display: inline-block;
+            width: 400px;
+            margin: 0;
+            padding: 5px;
+            font-size: 25px;
+            text-decoration: none;
+            line-height: 2;
+            border: 5px dotted white;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Styles for navigation links on hover and when active */
+        .topnav li a:hover,
+        .topnav li a.active {
+            background-color: white;
+            color: black;
+        }
+
+        /* Horizontal lines styles */
+        hr.line1 {
+            border: 5px solid black;
+        }
+
+        hr.line2 {
+            border: 5px dotted black;
+        }
+
+        /*heading styles*/
+        h2 {
+            font-weight: bold;
+            color: white;
+            font-size: 40px;
+            width: 50%;
+            margin: 0;
+            text-shadow: 3px 3px black;
+            -webkit-text-stroke: 1px white;
+        }
+
+        /*heading animation styles (changing colors) in the 'kulurs' class*/
+        .kulurs h2 {
+            height: 50px;
+            position: relative;
+            animation-name: palit;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        /*Keyframes(controls) for animation*/
+        @keyframes palit {
+            0% {
+                background-color: black;
+            }
+
+            25% {
+                background-color: brown;
+                ;
+            }
+
+            50% {
+                background-color: #5200cc;
+            }
+
+            75% {
+                background-color: green;
+            }
+
+            100% {
+                background-color: #990000;
+            }
+        }
+
+        .box {
+            height: 1020px;
+            background-color: #ffff74;
+            padding: 0px;
+            margin: 20px;
+        }
+
+        /*table, table cell, table header style*/
+        table,
+        td,
+        th {
+            font-size: 40px;
+            border: 3px solid black;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /*table row hover style*/
+        tr:hover {
+            background-color: red;
+            color: white;
+        }
+
+        /*table header style*/
+        th {
+            background-color: #00008B;
+            color: white;
+        }
+
+        /*table style*/
+        table {
+            border-collapse: separate;
+            border: 4px solid red;
+            width: 100%;
+        }
+
+        /*table header and table cell style*/
+        th,
+        td {
+            padding: 10px;
+        }
+
+        /*back button style*/
+        .button {
+            background-color: #a5ff28;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            width: 20%;
+            border: none;
+            box-shadow: 0 10px black;
+            border-radius: 70px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Top Navigation Section -->
+        <div class="topnav">
+
+            <ul>
+                <!-- Home Link -->
+                <li><a href="index.html">Home</a></li>
+                <!-- About Me Link -->
+                <li><a class="active" href="aboutme.html">About Me </a></li>
+
+            </ul>
+        </div>
+
+    </header>
+    <!-- Horizontal lines -->
+    <hr class="line1">
+    <hr class="line2">
+    <!-- heading with changing colors animation -->
+    <div class="kulurs">
+        <center><h2> Family Background </h2></center>
+    </div>
+
+    <div class="box">
+
+        <table>
+
+            <tr>
+                <th style="width: 10px;"> </th>
+                <th>NAME</th>
+                <th>ROLES</th>
+            </tr>
+
+            <tr>
+                <td><img src="images/mother.png" alt="mother" style="width:120px;height:100px;"> </td>
+                <td>Angelina A. Roces</td>
+                <td>Mother</td>
+            </tr>
+
+            <tr>
+                <td><img src="images/father.png" alt="father" style="width:150px;height:100px;"> </td>
+                <td>Alejandro A. Roces</td>
+                <td>Father</td>
+            </tr>
+
+            <tr>
+                <td><img src="images/brother.png" alt="Older brother" style="width:150px;height:100px;"> </td>
+                <td>Reginald A. Roces</td>
+                <td>Older brother</td>
+            </tr>
+            <tr>
+                <td><img src="images/sister.png" alt="younger sister" style="width:150px;height:100px;"> </td>
+                <td>Reignette A. Roces</td>
+                <td>Younger sister</td>
+            </tr>
+
+            <tr>
+                <td><img src="images/daboi.png" alt="my 1st nakshie" style="width:150px;height:100px;"> </td>
+                <td>Daboi</td>
+                <td>- First child<br> - My nakshie <br> - Angel
+                </td>
+            </tr>
+
+            <tr>
+                <td><img src="images/eco.png" alt="my 2nd nakshie" style="width:150px;height:200px;"> </td>
+                <td>Eco Bahg</td>
+                <td>- Second child<br>- My nakshie
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <form>
+        <button class="button" formaction="aboutme.html"> BACK </button>
+    </form>
+
+</body>
+
+</html>
